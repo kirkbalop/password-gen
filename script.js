@@ -18,6 +18,14 @@ var userArray = [];
 
 uppercaseArray [1]
 
+// Prompts user to define password characteristics
+var numCharacter = prompt("How many characters would you like your password to consist of? Pick from 8 to 128");
+var numbers = confirm("Would you like your password to contain numbers?");
+var uppercases = confirm("Would you like your password to contain uppercase letters?");
+var lowercases = confirm("Would you like your password to contain lowercase letters?");
+var characters = confirm("Would you like your password to contain special characters?");
+
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
