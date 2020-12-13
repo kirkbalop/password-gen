@@ -29,7 +29,16 @@ var characters = confirm("Would you like your password to contain special charac
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
-// Write password to the #password input
+for (var i = 0; i < numCharacter; i++) {
+      
+    userArray.push (resultArray[Math.floor(Math.random() * resultArray.length)]); 
+    }
+  
+    return userArray.join("") ;
+  }
+  
+
+// Push password text to user
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
