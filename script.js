@@ -30,6 +30,22 @@ if (numbers){
     
   }
 
+if (uppercases){
+    resultArray = resultArrayconcat(uppercaseArray);
+  
+  }
+  
+if (lowercases){
+    resultArray = resultArray.concat(lowercaseArray);
+  
+  }
+  
+if (characters){
+    resultArray = resultArray.concat(characterArray)
+  }
+  console.log(resultArray)
+  
+
 for (var i = 0; i < numCharacter; i++) {
       
     userArray.push (resultArray[Math.floor(Math.random() * resultArray.length)]); 
