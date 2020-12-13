@@ -25,13 +25,14 @@ var uppercases = confirm("Would you like your password to contain uppercase lett
 var lowercases = confirm("Would you like your password to contain lowercase letters?");
 var characters = confirm("Would you like your password to contain special characters?");
 
+// If statements for concatenation
 if (numbers){
     resultArray = resultArray.concat(numbArray);
     
   }
 
 if (uppercases){
-    resultArray = resultArrayconcat(uppercaseArray);
+    resultArray = resultArray.concat(uppercaseArray);
   
   }
   
@@ -41,7 +42,7 @@ if (lowercases){
   }
   
 if (characters){
-    resultArray = resultArray.concat(characterArray)
+    resultArray = resultArray.concat(characterArray);
   }
   console.log(resultArray)
   
