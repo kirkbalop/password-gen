@@ -20,28 +20,28 @@ uppercaseArray [1]
 
 // Prompts user to define password characteristics
 var numCharacter = prompt("How many characters would you like your password to consist of? Pick from 8 to 128");
-var numbers = confirm("Would you like your password to contain numbers?");
-var uppercases = confirm("Would you like your password to contain uppercase letters?");
-var lowercases = confirm("Would you like your password to contain lowercase letters?");
-var characters = confirm("Would you like your password to contain special characters?");
+var number = confirm("Would you like your password to contain numbers?");
+var uppercase = confirm("Would you like your password to contain uppercase letters?");
+var lowercase = confirm("Would you like your password to contain lowercase letters?");
+var character = confirm("Would you like your password to contain special characters?");
 
 // If statements for concatenation
-if (numbers){
+if (number){
     resultArray = resultArray.concat(numbArray);
     
   }
 
-if (uppercases){
+if (uppercase){
     resultArray = resultArray.concat(uppercaseArray);
   
   }
   
-if (lowercases){
+if (lowercase){
     resultArray = resultArray.concat(lowercaseArray);
   
   }
   
-if (characters){
+if (character){
     resultArray = resultArray.concat(characterArray);
   }
   console.log(resultArray)
